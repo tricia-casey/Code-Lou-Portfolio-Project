@@ -1,0 +1,69 @@
+portfoliostyle.css
+
+
+body {
+    border-style: solid;
+}
+
+
+/* SECTION: MAIN HEADER */
+
+.MainHeader {
+    background-color: pink;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h2{
+    font-family: monospace;
+    font-size: 40px;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTION: PAGE HEADER */
+
+.PageHeader {
+    background-color: aquamarine;
+    color: black;
+    text-align: center
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* SECTION: MAIN BODY CONTENT */
+
+.MainBodyContent {
+    background-color: darkviolet;
+    color: white
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTION: fOOTER */
+
+.Footer {
+    background-color: coral;
+    color: black;
+    text-align: center;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
