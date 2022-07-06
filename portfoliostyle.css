@@ -9,7 +9,7 @@ body {
 /* SECTION: MAIN HEADER */
 
 .MainHeader {
-    background-color: pink;
+    background-color: rgb(230, 15, 212);
     color: black;
     text-align: center;
 }
@@ -59,7 +59,7 @@ h4{
 /* SECTION: fOOTER */
 
 .Footer {
-    background-color: coral;
+    background-color: rgb(33, 166, 248);
     color: black;
     text-align: center;
 }
