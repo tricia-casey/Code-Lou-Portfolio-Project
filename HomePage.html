@@ -23,16 +23,41 @@
       <h2>Web Developer</h2>
       <nav class="MainNav">
         <!-- Hamburger Nav for Mobile, Listed out for tablet/desktop-->
+        <div id="menu">
+          <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </div>
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="HomePage.html">Home</a></li>
+              <li><a href="AboutMe.html">About Me</a></li>
+              <li><a href="ExampleWork.html">Example Work</a></li>
+              <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+          </nav> 
+        </div>
+        
+        <div class="menu-bg" id="menu-bg"></div>
+          <script src="portfolio.js">
+          </script>
+          <script id="rendered-js">
+            function menuOnClick() {
+              document.getElementById("menu-bar").classList.toggle("change");
+              document.getElementById("nav").classList.toggle("change");
+              document.getElementById("menu-bg").classList.toggle("change-bg");
+            }
+          </script>
+      
+        <!--
         <ul id="Navigation">
           <a href="HomePage.html">Home</a>
-          <!--Link for Home nav-->
           <a href="AboutMe.html">About Me</a>
-          <!--Link for About Me-->
           <a href="ExampleWork.html">Example Work</a>
-          <!--Link for Example Work-->
           <a href="ContactMe.html">Contact Me</a>
-          <!--Link for Contact Me-->
         </ul>
+        -->
       </nav>
     </header>
   </section>
