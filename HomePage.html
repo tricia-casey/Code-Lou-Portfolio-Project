@@ -40,8 +40,8 @@
         </div>
         
         <div class="menu-bg" id="menu-bg"></div>
-          <script src="portfolio.js">
-          </script> <!--the script to pull from js doesn't seem to be working w/o the additional code below. Troubleshoot-->
+          <script src="portfolio.js"></script>
+          <!--the script to pull from js doesn't seem to be working w/o the additional code below. Troubleshoot-->
           <script id="rendered-js">
             function menuOnClick() {
               document.getElementById("menu-bar").classList.toggle("change");
@@ -89,12 +89,21 @@
   <!--Footer Section-->
   <section class="Footer">
     <!--insert links to all pages (Home, About Me, Examples, and Contact Me)-->
-    <h5><a href="HomePage.html">Home</a></li></h5>
-    <h5><a href="AboutMe.html">About Me</a></h5>
-    <h5><a href="ExampleWork.html">Example Work</a></h5>
-    <h5><a href="ContactMe.html">Contact Me</a></h5>
-    <!--insert social media links (LinkedIn, Github)-->
+    <Section id="FooterPageLinks">
+      <h5><a href="HomePage.html">Home</a></li></h5>
+      <h5><a href="AboutMe.html">About Me</a></h5>
+      <h5><a href="ExampleWork.html">Example Work</a></h5>
+      <h5><a href="ContactMe.html">Contact Me</a></h5>
+    </Section>
     <!--insert copyright notice-->
+    <section id="Copyright">
+      <p>Copyright 2022</p>
+    </section>
+    <section id="SocialMediaLinks">
+      <p>FB</p>
+      <p>Insta</p>
+    </section>
+    <!--insert social media links (LinkedIn, Github)-->
   </section>
 
 </body>
