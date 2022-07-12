@@ -13,3 +13,86 @@
   <link rel="stylesheet" href="portfoliostyle.css">
 
 </head>
+
+<body>
+
+    <!--Main Header Section-->
+    <section class="MainHeader">
+      <header>
+        <h1>Tricia Casey</h1>
+        <h2>Web Developer</h2>
+        <nav class="MainNav">
+          <!-- Hamburger Nav for Mobile-->
+          <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="ExampleWork.html">Example Work</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
+            <script src="portfolio.js"></script>
+            <!--the script to pull from js doesn't seem to be working w/o the additional code below. Troubleshoot-->
+            <script id="rendered-js">
+              function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+              }
+            </script>
+        
+          <!-- list nav for desktop view:
+          <ul id="Navigation">
+            <a href="HomePage.html">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <a href="ExampleWork.html">Example Work</a>
+            <a href="ContactMe.html">Contact Me</a>
+          </ul>
+          -->
+        </nav>
+      </header>
+    </section>
+  
+    <!--Page Header Section-->
+    <section class="PageHeader">
+      <h3>Contact Me</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Amet consectetur adipiscing elit ut aliquam purus sit amet luctus.
+        </p>
+    </section>
+  
+    <!--Main Body Content Section-->
+    <section class="MainBodyContent">
+
+    </section>
+  
+    <!--Footer Section-->
+    <section class="Footer">
+      <Section id="FooterPageLinks">
+        <h5><a href="HomePage.html">Home</a></li></h5>
+        <h5><a href="AboutMe.html">About Me</a></h5>
+        <h5><a href="ExampleWork.html">Example Work</a></h5>
+        <h5><a href="ContactMe.html">Contact Me</a></h5>
+      </Section>
+      <section id="Copyright">
+        <p>Copyright &copy;<script>document.write(new Date().getFullYear())</script>Tricia Casey All Rights Reserved</p>
+      </section>
+      <section id="SocialMediaLinks">
+        <a href="https://github.com/tricia-casey">Github</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href=https://www.linkedin.com/in/tricia-casey-a43408186>LinkedIn</a>
+      </section>
+    </section>
+  
+  </body>
+  
+  </html>
