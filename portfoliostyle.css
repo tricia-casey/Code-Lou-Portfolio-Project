@@ -13,7 +13,7 @@ html, body {
     margin: 0;
  }
 
-/* SECTION: MAIN HEADER */
+/****************** SECTION: MAIN HEADER ************************/
 
 .MainHeader {
     margin: 0;
@@ -48,7 +48,11 @@ a{
     font-family: monospace;
 }
 
-/*HAMBURGER MENU*/
+#Navigation  {
+  display: none;
+}
+
+/**********************HAMBURGER MENU*************************/
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -149,7 +153,7 @@ body {
     transform: translate(-60%,-30%);
   }
 
-/* SECTION: PAGE HEADER */
+/****************** SECTION: PAGE HEADER *****************************/
 
 .PageHeader {
     background-color:cadetblue;
@@ -170,7 +174,7 @@ p{
     padding-bottom: 20px;
 }
 
-/* SECTION: MAIN BODY CONTENT */
+/************************ SECTION: MAIN BODY CONTENT **************************/
 
 .MainBodyContent {
     display: flex;
@@ -203,7 +207,7 @@ img {
     border-width: 3px;
 }
 
-/* SECTION: FOOTER */
+/***************************** SECTION: FOOTER *****************************/
 
 .Footer {
     padding : 25px;
@@ -246,13 +250,13 @@ h5 {
 
 /************************ Tablet Media Query *****************************/
 @media (min-width: 650px) {
-h1{
-  font-size: 4rem;
-}
+  h1{
+    font-size: 4rem;
+  }
 
-h2{
-  font-size: 3rem;
-}
+  h2{
+    font-size: 3rem;
+  }
 
   .MainBodyContent {
     display: flex;
@@ -274,11 +278,36 @@ h2{
     padding-right: 25px;
   }
 
+  .HomeImageGroupings {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .HomeImageGroupings:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    }
+
   .AboutMeImageGroupings {
   display: flex;
   padding: 50px;
   align-items: center;
   justify-content: space-between;
+  }
+
+  .HomeStatements {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
   }
 
   .AboutMeImageGroupings:nth-child(even) {
@@ -301,17 +330,52 @@ h2{
 }
 
 /*************************** Desktop Media Query ****************************/
-@media (min-width : 1000px) {
+@media (min-width : 900px) {
   #Navigation {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.25rem;
     justify-content: space-around;
     align-self: flex-end;
-    background-color: cadetblue;
     color: cornsilk;
+    padding-bottom: 0;
+    margin: 0;
   }
   
   h1{
     padding-top: 75px;
+    font-size: 4rem;
+  }
+
+  h2{
+    font-size: 3.25rem;
+  }
+
+  h3{
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+
+  img {
+    width: 75%;
+    max-height: 45vh;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  ul {
+    display: flex;
   }
 }

@@ -41,7 +41,6 @@
         
         <div class="menu-bg" id="menu-bg"></div>
           <script src="portfolio.js"></script>
-          <!--the script to pull from js doesn't seem to be working w/o the additional code below. Troubleshoot-->
           <script id="rendered-js">
             function menuOnClick() {
               document.getElementById("menu-bar").classList.toggle("change");
@@ -51,12 +50,12 @@
           </script>
       
         <!-- list nav for desktop view: -->
-        <ul id="Navigation">
+        <nav id="Navigation">
           <a href="HomePage.html">Home</a>
           <a href="AboutMe.html">About Me</a>
           <a href="ExampleWork.html">Example Work</a>
           <a href="ContactMe.html">Contact Me</a>
-        </ul>
+        </nav>
       </nav>
     </header>
   </section>
@@ -71,18 +70,31 @@
 
   <!--Main Body Content Section-->
   <section class="MainBodyContent">
-    <img src="Images\woman_working_at_laptop.jpg" alt="Woman working at a laptop" width="250px">
-      <h4><strong>Mission</strong></h4>
-        <p>To offer my services for the betterment of any organization I am lucky enough to be apart of.
-        </p>
-    <img src="Images\group_working_around_laptop.jpg" alt="group of women working together around a computer" width="300px">
-      <h4><strong>Values</strong></h4>
-        <p>Integrity. Passion. Commitment. Focus. Leadership.</p>
-    <img src="Images\laptop_on_wood_desk.jpg" alt="laptop and other work materials on wood desk" width="300px">
-      <h4><strong>Goals</strong></h4>
-        <p>To continue on my never-ending journey of learning.</p>
-        <p>To be the change that I want to see.</p>
-        <p>To do my part.</p>
+    <section class="HomeImageGroupings">
+      <img src="Images\woman_working_at_laptop.jpg" alt="Woman working at a laptop" width="250px">
+        <section class="HomeStatements">
+          <h4><strong>Mission</strong></h4>
+            <p>To offer my services for the betterment of any organization I am lucky enough to be apart of.
+          </p>
+        </section>
+    </section>
+    <section class="HomeImageGroupings">
+      <img src="Images\group_working_around_laptop.jpg" alt="group of women working together around a computer" width="300px">
+        <section class="HomeStatements">
+          <h4><strong>Values</strong></h4>
+            <p>Integrity. Passion. Commitment. Focus. Leadership.
+            </p>
+        </section>
+    </section>
+    <section class="HomeImageGroupings">
+      <img src="Images\laptop_on_wood_desk.jpg" alt="laptop and other work materials on wood desk" width="300px">
+        <section class="HomeStatements">
+          <h4><strong>Goals</strong></h4>
+            <p>To continue on my never-ending journey of learning.</p>
+            <p>To be the change that I want to see.</p>
+            <p>To do my part.</p>
+        </section>  
+    </section>
   </section>
 
   <!--Footer Section-->
