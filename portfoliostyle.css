@@ -207,6 +207,11 @@ img {
     border-width: 3px;
 }
 
+form {
+  background-color: cornsilk;
+  text-align: center;
+}
+
 /***************************** SECTION: FOOTER *****************************/
 
 .Footer {
@@ -331,16 +336,37 @@ h5 {
 
 /*************************** Desktop Media Query ****************************/
 @media (min-width : 900px) {
-  #Navigation {
+  
+ /* .MainHeader {
     display: flex;
+  } */
+
+  .TitleDesc {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+  }
+
+  #Navigation {
+    display: inline;
     font-size: 1.25rem;
     justify-content: space-around;
     align-self: flex-end;
     color: cornsilk;
     padding-bottom: 0;
     margin: 0;
+    flex-direction: row;
   }
-  
+
+  a:hover {
+    font-size: 1.5rem;
+    color: deeppink;
+  }
+
+  a:visited {
+    color :darkslateblue;
+  }
+
   h1{
     padding-top: 75px;
     font-size: 4rem;
@@ -377,5 +403,6 @@ h5 {
 
   ul {
     display: flex;
+    flex-direction: column;
   }
 }

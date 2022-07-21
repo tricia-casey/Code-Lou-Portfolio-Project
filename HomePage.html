@@ -19,44 +19,48 @@
   <!--Main Header Section-->
   <section class="MainHeader">
     <header>
-      <h1>Tricia Casey</h1>
-      <h2>Web Developer</h2>
-      <nav class="MainNav">
-        <!-- Hamburger Nav for Mobile-->
-        <div id="menu">
-          <div id="menu-bar" onclick="menuOnClick()">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
+        <section class="TitleDesc">
+          <h1>Tricia Casey</h1>
+          <h2>Web Developer</h2>
+        </section>
+          <nav class="MainNav">
+          <!-- Hamburger Nav for Mobile-->
+          <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+              <ul>
+                <li><a href="HomePage.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="ExampleWork.html">Example Work</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+              </ul>
+            </nav> 
           </div>
-          <nav class="nav" id="nav">
-            <ul>
-              <li><a href="HomePage.html">Home</a></li>
-              <li><a href="AboutMe.html">About Me</a></li>
-              <li><a href="ExampleWork.html">Example Work</a></li>
-              <li><a href="ContactMe.html">Contact Me</a></li>
-            </ul>
-          </nav> 
-        </div>
         
-        <div class="menu-bg" id="menu-bg"></div>
-          <script src="portfolio.js"></script>
-          <script id="rendered-js">
-            function menuOnClick() {
-              document.getElementById("menu-bar").classList.toggle("change");
-              document.getElementById("nav").classList.toggle("change");
-              document.getElementById("menu-bg").classList.toggle("change-bg");
-            }
-          </script>
+          <div class="menu-bg" id="menu-bg"></div>
+            <script src="portfolio.js"></script>
+            <script id="rendered-js">
+              function menuOnClick() {
+                document.getElementById("menu-bar").classList.toggle("change");
+                document.getElementById("nav").classList.toggle("change");
+                document.getElementById("menu-bg").classList.toggle("change-bg");
+              }
+            </script>
       
-        <!-- list nav for desktop view: -->
-        <nav id="Navigation">
-          <a href="HomePage.html">Home</a>
-          <a href="AboutMe.html">About Me</a>
-          <a href="ExampleWork.html">Example Work</a>
-          <a href="ContactMe.html">Contact Me</a>
-        </nav>
-      </nav>
+          <!-- list nav for desktop view: -->
+          <section class="ULMenu">
+            <nav id="Navigation">
+              <a href="HomePage.html">Home</a>
+              <a href="AboutMe.html">About Me</a>
+              <a href="ExampleWork.html">Example Work</a>
+              <a href="ContactMe.html">Contact Me</a>
+            </nav>
+          </section>
+          </nav>
     </header>
   </section>
 
