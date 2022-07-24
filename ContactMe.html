@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="portfoliostyle.css">
 
+  <script src="portfolio.js"></script>
+
 </head>
 
 <body>
@@ -40,7 +42,7 @@
           </div>
           
           <div class="menu-bg" id="menu-bg"></div>
-            <script src="portfolio.js"></script>
+            <!--<script src="portfolio.js"></script>-->
             <!--the script to pull from js doesn't seem to be working w/o the additional code below. Troubleshoot-->
             <script id="rendered-js">
               function menuOnClick() {
@@ -70,23 +72,56 @@
     </section>
   
     <!--Main Body Content Section-->
-    <form>
+  
+
+<!-----------FORM HTML--------->
+
+    <form name="ContactForm">
       <br>
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname"><br>
-      <label for="email">Email:</label><br>
-      <input type="text" id="email" name="email"><br><br>
-      <input type="checkbox" id="want1" name="want1" value="Website">
-      <label for="want1"> I want to inquire about a website.</label><br>
-      <input type="checkbox" id="want2" name="want2" value="Hire">
-      <label for="want2"> I want to inquire about hiring you for a company.</label><br>
-      <input type="checkbox" id="want3" name="want3" value="Else">
-      <label for="want3"> I want to inquire about something else.</label><br><br>
-      <input type="submit" value="Submit">
-      <br><br>
+      <p> Name: <input type="text" name="name" placeholder="First and Last Name" required></p>
+      <p> Email: <input type="text" name="email" placeholder="Complete Email Address" required></p>
+      <p> Please list your question, request, or comment below:</p>
+      <textarea id="What can I help you with?" rows="4"></textarea>
+      <p>
+        <button id="btn">Submit</button>
+        <input type="Reset" value="Reset" name="Reset"/>
+      </p>
     </form>
+
+
+<!-----------FORM JS--------->
+
+<script>
+    const name = document.forms.ContactForm.name.value;
+    const email = document.forms.ContactForm.email.value;
+    const btn = document.forms.ContactForm.submit.value;
+    const regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
+    const regName = /\d+$/g;                                    // Javascript reGex for Name validation
+ 
+  btn.addEventListener("click", function() {
+    //alert("Awesome!!"); });
+    if (name == '' || !regName.test(name)) {
+      window.alert("Please enter your full name.");
+      name.focus();
+      return false;
+    }
+
+    if (email == '' || !regEmail.test(Email)) {
+      window.alert("Please enter a valid Email address.");
+      email.focus();
+      return false;
+    }
+
+    else {
+      alert("Your submission was successful.  We'll be in touch soon!");
+    }
+      
+    return true;
+  });
+
+</script>
+
+
   
     <!--Footer Section-->
     <section class="Footer">
@@ -97,7 +132,9 @@
         <h5><a href="ContactMe.html">Contact Me</a></h5>
       </Section>
       <section id="Copyright">
-        <p>Copyright &copy;<script>document.write(new Date().getFullYear())</script>Tricia Casey All Rights Reserved</p>
+        <p>Copyright &copy;<script>document.write(new Date().getFullYear())</script></p>
+        <p>Tricia Casey</p> 
+        <p>All Rights Reserved</p>
       </section>
       <section id="SocialMediaLinks">
         <a href="https://github.com/tricia-casey">Github</a>
