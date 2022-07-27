@@ -78,8 +78,8 @@
 
     <form name="ContactForm">
       <br>
-      <p> Name: <input type="text" name="name" placeholder="First and Last Name" required></p>
-      <p> Email: <input type="text" name="email" placeholder="Complete Email Address" required></p>
+      <p> Name: <input type="text" name="name" placeholder="First and Last Name" id="name" required></p>
+      <p> Email: <input type="text" name="email" placeholder="Complete Email Address" id="email" required></p>
       <p> Please list your question, request, or comment below:</p>
       <textarea id="What can I help you with?" rows="4"></textarea>
       <p>
@@ -92,32 +92,19 @@
 <!-----------FORM JS--------->
 
 <script>
-    const name = document.forms.ContactForm.name.value;
-    const email = document.forms.ContactForm.email.value;
-    const btn = document.forms.ContactForm.submit.value;
-    const regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
-    const regName = /\d+$/g;                                    // Javascript reGex for Name validation
- 
-  btn.addEventListener("click", function() {
-    //alert("Awesome!!"); });
-    if (name == '' || !regName.test(name)) {
-      window.alert("Please enter your full name.");
-      name.focus();
-      return false;
-    }
+    const name = document.getElementById('name')
+    const email = document.getElementById('email')
+    const btn = document.getElementById('btn');
+    //const regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
+    //const regName = /\d+$/g;                                    // Javascript reGex for Name validation
 
-    if (email == '' || !regEmail.test(Email)) {
-      window.alert("Please enter a valid Email address.");
-      email.focus();
-      return false;
-    }
 
-    else {
-      alert("Your submission was successful.  We'll be in touch soon!");
-    }
-      
-    return true;
-  });
+function showAlert(){
+  var name = document.getElementById('name').value;
+  alert("Thank you for reaching out!  I can't wait to talk to you!");
+}
+
+btn.addEventListener("click", showAlert);
 
 </script>
 
@@ -132,9 +119,7 @@
         <h5><a href="ContactMe.html">Contact Me</a></h5>
       </Section>
       <section id="Copyright">
-        <p>Copyright &copy;<script>document.write(new Date().getFullYear())</script></p>
-        <p>Tricia Casey</p> 
-        <p>All Rights Reserved</p>
+        <p class="CopyrightText">Copyright &copy;<script>document.write(new Date().getFullYear())</script>  Tricia Casey</p> 
       </section>
       <section id="SocialMediaLinks">
         <a href="https://github.com/tricia-casey">Github</a>

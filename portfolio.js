@@ -1,8 +1,13 @@
-//function menuOnClick() {
-    //document.getElementById("menu-bar").classList.toggle("change");
-    //document.getElementById("nav").classList.toggle("change");
-    //document.getElementById("menu-bg").classList.toggle("change-bg");
-  //}
+
+//Hamburger Menu "on/off"
+
+function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");
+    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("menu-bg").classList.toggle("change-bg");
+  }
+
+//Form validation script - work in progress!!
 
   //const Firstname = document.getElementById('FirstName')
   //const Lastname = document.getElementById('LastName')
