@@ -1,6 +1,6 @@
 # Code-Lou-Portfolio-Project
 
-Thank you for looking at my first ever website, a portfolio page for me!  I have learned so much in this process (and learned where I can improve!) and I am excited to share this with you at this time.  The features included in this project include :
+Thank you for looking at my first ever website, a portfolio page for me!  I have learned so much in this process (and learned where I can continue improve!) and I am excited to share this with you at this time.  My overall, long term plan for this project is to create multiple other webpages using the ideas on the "Exampls" page.  Once those sites are completed, I will link them to this portfolio page.  The features included in this project include :
 
 CSS -
 

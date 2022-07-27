@@ -7,25 +7,19 @@ function menuOnClick() {
     document.getElementById("menu-bg").classList.toggle("change-bg");
   }
 
-//Form validation script - work in progress!!
+//Form Script
 
-  //const Firstname = document.getElementById('FirstName')
-  //const Lastname = document.getElementById('LastName')
-  //const Email = document.getElementById('Email')
-  //const form = document.getElementById('form')
-  //const errorElement = document.getElementById('error')
+  const name = document.getElementById('name')
+  const email = document.getElementById('email')
+  const btn = document.getElementById('btn');
+  //const regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
+  //const regName = /\d+$/g;                                    // Javascript reGex for Name validation
 
-  //form.addEventListener(Submit, (e) => {
-   // let messages = []
-   // if (FirstName.value === '' || FirstName.value == null) {
-   //   messages.push('Name is Required')
-   // }
 
-   // if (messages.length > 0) {
-   //   e.preventDefault()
-   //   errorElement.innerText = messages.join(', ')    
-   // }
-   // e.preventDefault()
- // })
+function showAlert(){
+var name = document.getElementById('name').value;
+alert("Thank you for reaching out!  I can't wait to talk to you!");
+}
 
+btn.addEventListener("click", showAlert);
 
